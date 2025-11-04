@@ -101,14 +101,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
       const actions = {
         task: {
-          added: (task) => remoteUpdates.events({ action: "add-task", type: task }),
-          modified: (task) => remoteUpdates.events({ action: "update-task", type: task }),
-          removed: (task) => remoteUpdates.events({ action: "delete-task", type: task }),
+          added: (task) => remoteUpdates.tasks({ type: "add-task", task }),
+          modified: (task) => remoteUpdates.tasks({ type: "update-task", task }),
+          removed: (task) => remoteUpdates.tasks({ type: "delete-task", task }),
         },
         link: {
-          added: (link) => remoteUpdates.events({ action: "add-link", type: link }),
-          modified: (link) => remoteUpdates.events({ action: "update-link", type: link }),
-          removed: (link) => remoteUpdates.events({ action: "delete-link", type: link }),
+          added: (link) => remoteUpdates.links({ type: "add-link", link }),
+          modified: (link) => remoteUpdates.links({ type: "update-link", link }),
+          removed: (link) => remoteUpdates.links({ type: "delete-link", link }),
         },
       };
 
