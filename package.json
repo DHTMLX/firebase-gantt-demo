@@ -1,0 +1,19 @@
+{
+  "name": "gantt-realtime-firebase-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "dhtmlx-gantt": "^9.1.0",
+    "firebase": "^11.9.1"
+  }
+}
