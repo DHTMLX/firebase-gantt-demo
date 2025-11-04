@@ -13,8 +13,8 @@ The setup makes it easy to build collaborative project management tools where mu
 ## Quick start
 
 ```bash
-git clone https://github.com/DHTMLX/%REPO%.git
-cd gantt-realtime-firebase-demo
+git clone git@github.com:DHTMLX/firebase-gantt-demo.git
+cd firebase-gantt-demo
 npm i
 cp .env.example .env             # paste your Firebase keys
 npm run dev
